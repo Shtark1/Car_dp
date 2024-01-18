@@ -1,0 +1,14 @@
+{
+  "type": "service_account",
+  "project_id": "cardp-411315",
+  "private_key_id": "cb8824c649ce0d02e857bf95ef453b038b39b057",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC545e/+M5pLpMF\nFV0ZsdBtgCe5TxV/wugqodF6AQP6qIZM6i3dinBjGZqsz0ngFg5NkPRPocFgYNZE\nCofZmhHBB87k5uxJIzflOXc4oHImq8Ezsywwviz9CukAI7swDrA2/J7dJHPZ7IWI\nu5BJhivd9Lu1S2BZVrCanq6euqN110QoPGMWirptUAkaf1zcsIUOoMZzLZJKxfGJ\nqrqlO4s7tehGrGPYaTQ2L9cCCUDY71vzg+SXPpnLWAgg7BRjnLhVb64Jdr63hETi\nlyuBjgh7Ma/ACUEi380ZEM5ZQJ6JJiF/23UmKP9kMdiD+yd3V8IeYD9CTYari8wY\nR9xPaok3AgMBAAECggEATfIVqR0yrB8n7ctCASqy659/yK/VI3/+axX0aPSxDvOI\ncQsHFWzd6GgNmCXJY+nLsJG2KAf7NqcUYW6K/V8hz6+u/QOpk5dtcjRQ/hElHHsL\npdqdDolIAwkGn5TcAnA+SqhOEwuceoY3jhicDYBxt33OEdyb94omvocIUK2RKjFV\nRDNaqOt2CQv5sXTL8m2CJoFXcO6tZLJB7UNKqGUcPY22acRw2MTD7G4e+uFF3sOR\nF4UsAvuSfuiM6DRkLm0FeLZfm1zQx78Ntuq13GsWI/1CEV89DXj2G+TbFzDpunjG\n5KoAVlaTmxMTemCejW10DVjwdNYxXd+hFDIoY6SsLQKBgQDa8tI6+7jiaRX8nuuv\nfAN2ee2ESW1zzh10fHKSfXJPluE26qzhHC4hPkvd3lJUBNMcgQSAEZt5bR/sD0Jt\nHRgmQkV9vOkaoHpAbhj6XNYtFZ5MMiE9tpYs6EKNbe5Mb252FT4gcB/tCDC8Du8I\nlnxAkEsjzVoN7GcsCgijUHW/UwKBgQDZWJXAMecioDfOXJQ37YsxlG4eK1oGfHmf\n7e45O+fNGi+Nw6e7gzLy8s3Bj+LVErxW5ODBX/Hzj0oHtQixdsCtKtn1e3Cd2RA3\npSPkb9Ex9lG+y7L5o7mlb82r56fi2UyjXkWyuM/z+sBd2DKzxUwB3KkR/oKJG+sK\naiKBlyCmDQKBgBOfw/wJZ87TQGc+Dz3RTbYmw4Uh16+Tf8xbAyHiIIbFrTXw3sHm\ndrQAE2i1boedTxa08aRQ77B4eW39CCUjgHCdbAETF4mNbKettotqGsA7uc52h8gy\nP0+TGbP3cG5lZm8rBECADDyAiW2xoPcSFdzrkfCJjVLGJ5Eo7RFGOueFAoGBAKPr\nRo28VTjtIwmVEwgXNHqBGofQZEYuDMCMfrVVs94hGKpPXKp0KbHHY1zPeuD+D2Nt\nnQDarqzlbYzggRzuliREBDw7C9VQhwWgm7BGkLygrEg8ctAKJhJafwBeZ2UUQ9OW\nXvSKo/O7MufUDXE9pLRmynBSxfpIPv0MzNd1tl7lAoGAL9BToTeLdUnkbEvmAI6q\naSrHt9oUY62GGJ45+44PZVau1jpDK57ezUVr+CjA10vIji11qmLBR39i9XfzGZre\nMRKw75kTfA6nTUpHnWXR8+sZd0s7uP2/yqnWibwkkr/tiMI+f23E+iP9NtNtnDfo\nr9bMVXMy0YskMn3s/Y+pIU0=\n-----END PRIVATE KEY-----\n",
+  "client_email": "cardpapi@cardp-411315.iam.gserviceaccount.com",
+  "client_id": "101014911950633223942",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cardpapi%40cardp-411315.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com",
+  "token_bot": "6318477390:AAEn8WVotSW7ZusgKjx4yUBHwqHNWkkxGRc"
+}

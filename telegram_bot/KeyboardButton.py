@@ -12,6 +12,7 @@ btn_divisions_all = KeyboardButton("Все подразделения")
 btn_car_all = KeyboardButton("Все автомобили")
 
 # ПЕРИОД
+btn_all = KeyboardButton("Всё время")
 btn_week = KeyboardButton("Неделя")
 btn_month = KeyboardButton("Месяц")
 
@@ -51,7 +52,7 @@ btn_back = KeyboardButton("Меню")
 BUTTON_TYPES = {
     "BTN_HOME": ReplyKeyboardMarkup(resize_keyboard=True).add(btn_divisions_1, btn_divisions_2, btn_divisions_3).add(btn_divisions_all),
     "BTN_CAR": ReplyKeyboardMarkup(resize_keyboard=True),
-    "BTN_PERIOD": ReplyKeyboardMarkup(resize_keyboard=True).add(btn_week, btn_month).add(btn_back),
+    "BTN_PERIOD": ReplyKeyboardMarkup(resize_keyboard=True).add(btn_week, btn_month, btn_all).add(btn_back),
 
     "BTN_HOME_ADMIN": ReplyKeyboardMarkup(resize_keyboard=True).add(btn_add_user, btn_del_user).add(btn_add_car, btn_del_car, btn_update_car).add(btn_add_admin, btn_del_admin).add(btn_view_users).add(btn_edit_text),
     "BTN_ADD_CAR": ReplyKeyboardMarkup(resize_keyboard=True).add(btn_divisions_1, btn_divisions_2, btn_divisions_3).add(btn_cancel),

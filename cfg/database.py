@@ -61,3 +61,13 @@ class Database:
                     name_car = all_car_d3[0].replace(f"{name_car},", "")
                     division = "car_d3"
                     self.cursor.execute(f"UPDATE users SET {division} = (?) WHERE user_id = (?)", (name_car, user_id))
+
+    def del_all_users(self):
+        with self.connection:
+            return self.cursor.execute("DELETE FROM users")
+
+    def add_dada_sheet(self, data):
+        with self.connection:
+            for user_data in data:
+                user_id, username, car_d1, car_d2, car_d3 = user_data[:5]
+                self.cursor.execute("INSERT INTO users (user_id, username, car_d1, car_d2, car_d3) VALUES (?, ?, ?, ?, ?)", (user_id, username, car_d1, car_d2, car_d3))

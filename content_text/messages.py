@@ -25,6 +25,8 @@ no_send_message = "Такого периода нет"
 error_send_message = "Машина была не найдена\n\n"
 send_file_message = "Отправка файлов началась!"
 
+update_date_message = "Данные обновлены!"
+
 MESSAGES = {
     "start": start_message,
     "no_start": no_start_message,
@@ -43,4 +45,5 @@ MESSAGES = {
 
     "error_send": error_send_message,
     "send_file": send_file_message,
+    "update_date": update_date_message,
 }
