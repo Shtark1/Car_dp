@@ -33,8 +33,11 @@ def overwriting_data():
                 wb_new.sheets[0].delete()
                 wb_new.save(f'all_file_excel/{sheet.name} Всё время.xlsx')
                 wb_new.close()
-    finally:
         excel_app.quit()
+    # finally:
+    # excel_app.quit()
+    except:
+        ...
 
     os.remove("all_file_excel/output.xlsx")
 
