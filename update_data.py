@@ -38,10 +38,8 @@ def overwriting_data():
                 wb_new.save(f'all_file_excel/{sheet.name} Всё время.xlsx')
                 wb_new.close()
         excel_app.quit()
-    # finally:
-    # excel_app.quit()
-    except:
-        ...
+    except Exception as ex:
+        print(ex)
 
     os.remove("all_file_excel/output.xlsx")
 
