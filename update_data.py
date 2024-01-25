@@ -1,4 +1,5 @@
 import os
+import shutil
 from oauth2client.service_account import ServiceAccountCredentials
 import gspread
 from cfg.database import Database
@@ -18,6 +19,9 @@ def overwriting_data():
     db.del_all_users()
     db.add_dada_sheet(all_values_sheet)
 
+    shutil.rmtree("all_file_excel")
+    os.mkdir("all_file_excel")
+    
     all_sheets = client.open("Car_dp").export(format=ExportFormat.EXCEL)
     with open('all_file_excel/output.xlsx', 'wb') as f:
         f.write(all_sheets)
