@@ -27,19 +27,19 @@ def overwriting_data():
         f.write(all_sheets)
 
 
-    try:
-        excel_app = xw.App(visible=False)
-        wb = excel_app.books.open('all_file_excel/output.xlsx')
-        for sheet in wb.sheets:
-            if sheet.name != "Настройки":
-                wb_new = xw.Book()
-                sheet.copy(after=wb_new.sheets[0])
-                wb_new.sheets[0].delete()
-                wb_new.save(f'all_file_excel/{sheet.name} Всё время.xlsx')
-                wb_new.close()
-        excel_app.quit()
-    except Exception as ex:
-        print(ex)
+    # try:
+    excel_app = xw.App(visible=False)
+    wb = excel_app.books.open('all_file_excel/output.xlsx')
+    for sheet in wb.sheets:
+        if sheet.name != "Настройки":
+            wb_new = xw.Book()
+            sheet.copy(after=wb_new.sheets[0])
+            wb_new.sheets[0].delete()
+            wb_new.save(f'all_file_excel/{sheet.name} Всё время.xlsx')
+            wb_new.close()
+    excel_app.quit()
+    # except Exception as ex:
+        # print(ex)
 
     os.remove("all_file_excel/output.xlsx")
 
