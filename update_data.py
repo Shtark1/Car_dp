@@ -4,8 +4,8 @@ from oauth2client.service_account import ServiceAccountCredentials
 import gspread
 from cfg.database import Database
 from gspread.utils import ExportFormat
-import xlwings as xw
 import openpyxl
+
 
 db = Database('cfg/database')
 
@@ -21,14 +21,13 @@ def overwriting_data():
 
     shutil.rmtree("all_file_excel")
     os.mkdir("all_file_excel")
-    
+
     all_sheets = client.open("Car_dp").export(format=ExportFormat.EXCEL)
     with open('all_file_excel/output.xlsx', 'wb') as f:
         f.write(all_sheets)
 
-
     # try:
-    # with xw.App(visible=False) as excel_app:
+    #     excel_app = xw.App(visible=False)
     #     wb = excel_app.books.open('all_file_excel/output.xlsx')
     #     for sheet in wb.sheets:
     #         if sheet.name != "Настройки":
@@ -39,7 +38,22 @@ def overwriting_data():
     #             wb_new.close()
     #     excel_app.quit()
     # except Exception as ex:
-        # print(ex)
+    #     print(ex)
+    
+    wb = openpyxl.load_workbook('all_file_excel/output.xlsx')
+    sheets = wb.sheetnames
+    wb.save('all_file_excel/output.xlsx')
+
+    for idx, s in enumerate(sheets):
+        wb = openpyxl.load_workbook('all_file_excel/output.xlsx')
+        sheets = wb.sheetnames
+
+        if idx != 0:
+            for idxs, sheet in enumerate(sheets):
+                if idx != idxs:
+                    sheet_name = wb.get_sheet_by_name(sheets[idxs])
+                    wb.remove_sheet(sheet_name)
+            wb.save(f'all_file_excel/{sheets[idx]}.xlsx')
 
     os.remove("all_file_excel/output.xlsx")
 
@@ -73,7 +87,3 @@ def overwriting_data():
                             sheet.delete_rows(row - 4)
 
             wb.save(f'all_file_excel/{file[:-15]} Месяц.xlsx')
-
-
-if __name__ == '__main__':
-    overwriting_data()
