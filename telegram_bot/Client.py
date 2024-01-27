@@ -44,7 +44,7 @@ async def car_in_divisions(message: Message):
             btn_car = ReplyKeyboardMarkup(resize_keyboard=True)
             for car in all_car_name:
                 btn_car.add(KeyboardButton(f"{car}"))
-            if len(all_car_name) > 2:
+            if len(all_car_name) >= 2:
                 btn_car.add(KeyboardButton("Все автомобили")).add(KeyboardButton("Меню"))
             else:
                 btn_car.add(KeyboardButton("Меню"))
