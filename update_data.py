@@ -53,7 +53,7 @@ def overwriting_data():
                 if idx != idxs:
                     sheet_name = wb.get_sheet_by_name(sheets[idxs])
                     wb.remove_sheet(sheet_name)
-            wb.save(f'all_file_excel/{sheets[idx]}.xlsx')
+            wb.save(f'all_file_excel/{sheets[idx]} Всё время.xlsx')
 
     os.remove("all_file_excel/output.xlsx")
 
